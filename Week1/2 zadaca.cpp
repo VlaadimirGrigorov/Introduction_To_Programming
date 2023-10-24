@@ -19,5 +19,4 @@ int main()
 
 	int newNumber = thirdDigit * 100 + secondDigit * 10 + firstDigit + 1;
 	std::cout << newNumber << std::endl;
-
 }
