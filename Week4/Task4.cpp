@@ -16,6 +16,11 @@ int countDigits(int number)
 
 int concatenation(unsigned int x, unsigned int y)
 {
+	if (x == 0)
+	{
+		return 0;
+	}
+
 	int digits = countDigits(y);
 	int power = pow(10, digits);
 	
