@@ -63,13 +63,6 @@ bool isConcatenationOfTwoPalindromeArrays(const int arr[], size_t length)
 
 int main()
 {
-	/*
-	Задача 4 : Да се напише функция, която приема масив и връща дали е конкатенация на два масива, които са палиндроми.
-	Вход : [1 2 3 2 1 4 5 5 4] , Изход : true
-	Вход : [1 2 3 4 5] , Изход : false
-	Вход : [1 2 3 2 1] , Изход : true
-	*/
-
 	constexpr int size = 100;
 	int arr[size];
 	size_t length;

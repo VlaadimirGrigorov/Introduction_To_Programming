@@ -35,9 +35,6 @@ int lcmInArray(const int arr[], size_t length)
 
 int main()
 {
-	// Задача 2 Да се напише функция, която приема масив и връща най - малкото общо кратно на числата в масива.
-	// Вход: [9 18 6 12] , Изход : 36
-
 	constexpr int size = 50;
 	int arr[size];
 	size_t length;
