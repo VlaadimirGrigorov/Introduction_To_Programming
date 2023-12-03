@@ -38,13 +38,13 @@ int main()
 	// Задача 2 Да се напише функция, която приема масив и връща най - малкото общо кратно на числата в масива.
 	// Вход: [9 18 6 12] , Изход : 36
 
-	constexpr int size1 = 50;
-	int arr1[size1];
-	size_t length1;
-	std::cin >> length1;
-	inputArr(arr1, length1);
+	constexpr int size = 50;
+	int arr[size];
+	size_t length;
+	std::cin >> length;
+	inputArr(arr, length);
 
-	std::cout << lcmInArray(arr1, length1) << std::endl;
+	std::cout << lcmInArray(arr, length) << std::endl;
 
 	return 0;
 }

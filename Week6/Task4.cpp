@@ -70,13 +70,13 @@ int main()
 	Вход : [1 2 3 2 1] , Изход : true
 	*/
 
-	constexpr int size3 = 50;
-	int arr3[size3];
-	size_t length3;
-	std::cin >> length3;
-	inputArr(arr3, length3);
+	constexpr int size = 100;
+	int arr[size];
+	size_t length;
+	std::cin >> length;
+	inputArr(arr, length);
 
-	std::cout << std::boolalpha << isConcatenationOfTwoPalindromeArrays(arr3, length3) << std::endl;
+	std::cout << std::boolalpha << isConcatenationOfTwoPalindromeArrays(arr, length) << std::endl;
 
 	return 0;
 }

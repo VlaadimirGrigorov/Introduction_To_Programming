@@ -44,13 +44,13 @@ int main()
 	// Задача 3 Да се напише функция, която приема масив и връща най - големият общ делител на числата в масива.
 	// Вход: [9 18 6 12] , Изход : 3
 
-	constexpr int size2 = 50;
-	int arr2[size2];
-	size_t length2;
-	std::cin >> length2;
-	inputArr(arr2, length2);
+	constexpr int size = 50;
+	int arr[size];
+	size_t length;
+	std::cin >> length;
+	inputArr(arr, length);
 	
-	std::cout << gcdInArray(arr2, length2) << std::endl;
+	std::cout << gcdInArray(arr, length) << std::endl;
 
 	return 0;
 }

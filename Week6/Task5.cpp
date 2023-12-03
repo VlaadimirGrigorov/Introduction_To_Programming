@@ -37,17 +37,18 @@ int main()
 	//Âõîä : 6 5 4 3 2 10 Èçõîä : 15 //â ìàñèâà [5 4 3 2 1 0] èìà 15 èíâåğñèè.
 	//Âõîä : 5 10 11 12 13 14 15, Èçõîä : 0
 
+	constexpr int size = 100;
 	unsigned N; 
-	int arr4[100];
+	int arr[size];
 	std::cin >> N;
-	inputArr(arr4, N);
+	inputArr(arr, N);
 
 	if (N >= 1000)
 	{
 		return 0;
 	}
 
-	std::cout << "Count of inversions is " << inversions(arr4, N) << std::endl;
+	std::cout << "Count of inversions is " << inversions(arr, N) << std::endl;
 
 	return 0;
 }

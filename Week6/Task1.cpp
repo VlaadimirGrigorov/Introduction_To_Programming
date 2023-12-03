@@ -25,7 +25,7 @@ int main()
 {
 	// Задача 1: Да се напише функция, която приема масив и връща дали е палиндром.
 	// Вход : [1 2 3 2 1] , Изход : true
-	constexpr int size = 50;
+	constexpr int size = 100;
 	int arr[size];
 	size_t length;
 	std::cin >> length;
