@@ -1,45 +1,42 @@
 #include <iostream>
-#include <cmath>
+
+int maxElement(int n)
+{
+	int number, max = 0;
+	for (int i = 0; i < n; i++)
+	{
+		std::cin >> number;
+		if (number > max)
+		{
+			max = number;
+		}
+	}
+
+	return max;
+}
 
 int main()
 {
-	/*
-	Задача 17: Да се напише програма, която приема цяло положително число n(n >= 2) и след това n цели числа.Да се отпечатат най - голямато и второто по големина.
-	Вход : 10 9 1 4 5 10 99 34 0 44 1, Изход : 99 44
-	Вход : 4 1 3 3 1, Изход : 4 3
-	*/
-
-	int n; 
-	std::cout << "Enter a number: ";
+	int n, max = 0, secondMax = 0;
 	std::cin >> n;
-
-	if (n < 2)
-	{
-		return 0;
-	}
-
-	// input all ten numbers
-	int otherNumbers, i = 0;
-	std::cin >> otherNumbers; // first entered number
-	int maxNumber = otherNumbers, secondMaxNumber = otherNumbers; // set max and secondMax to be equal to first entered number and compare it with others
+	int i = 0;
 
 	do
 	{
-		std::cin >> otherNumbers; // second entered number -> 1
-		if (otherNumbers > maxNumber) // 1 > 9
+		int number;
+		std::cin >> number;
+		if (number > max)
 		{
-			maxNumber = otherNumbers;
+			secondMax = max;
+			max = number;
 		}
-		if (otherNumbers > secondMaxNumber && otherNumbers != maxNumber) // 1 > 9 && 1 != 99
+		else if (number > secondMax && number != max)
 		{
-			secondMaxNumber = otherNumbers;
+			secondMax = max;
 		}
-		i++;
-	} while (i < n - 1); // intered till last - 1 because we entered one number before this loop (9)
+	} while (i != n);
 
-	std::cout << "Max number is " << maxNumber << " and second max number is " << secondMaxNumber << std::endl;
-
-	
+	std::cout << max << " and " << secondMax << std::endl;
 
 	return 0;
 }
