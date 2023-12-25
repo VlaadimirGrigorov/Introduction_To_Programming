@@ -1,13 +1,7 @@
 #include <iostream>
-#include <cmath>
 
 int main()
 {
-	/*
-	Задача 8: Въвеждат се две числа.Да се отпечата по - голямото от двете.
-	Вход : 265, 44, Изход : 265
-	*/
-
 	int x, y;
 	std::cout << "Enter first number: ";
 	std::cin >> x;
